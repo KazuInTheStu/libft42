@@ -12,9 +12,11 @@
 
 void *ft_memcpy(void *dest, const void *src, unsigned long num)
 {
-    unsigned char *d = dest;
-    const unsigned char *s = src;
+    unsigned char *d;
+    unsigned char *s;
     
+    *d = dest;
+    *s = src;
     while (num--)
     {
         *d = *s;
