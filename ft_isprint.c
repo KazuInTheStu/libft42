@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 13:59:47 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/02 13:59:47 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/04 02:57:48 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int n)
+int	ft_isprint(int n)
 {
-    return ((n >= 32 && n <= 126));
+	return ((n >= 32 && n <= 126));
 }

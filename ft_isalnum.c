@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 13:57:04 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/02 13:57:04 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/04 02:57:30 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    return ((c >= '0' && c <= '9') ||
-            (c >= 'A' && c <= 'Z') ||
-            (c >= 'a' && c <= 'z'));
+	return ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a'
+			&& c <= 'z'));
 }

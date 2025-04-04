@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 15:10:40 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/02 15:10:40 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/04 02:54:34 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_bzero(void *s, unsigned long len)
+void	ft_bzero(void *s, unsigned long len)
 {
-    unsigned char *p;
-    
-    *p = s;
-    while (len--)
-    {
-        *p = 0;
-        p++;
-    }
+	unsigned char	*p;
+
+	*p = s;
+	while (len--)
+	{
+		*p = 0;
+		p++;
+	}
 }

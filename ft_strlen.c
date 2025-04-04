@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 14:01:08 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/02 14:01:08 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/04 02:58:27 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(const char *c)
+int	ft_strlen(const char *c)
 {
-    int i;
-    
-    i = 0;
-    while (c[i] != '\0')
-        i++;
-    return(i);
+	int	i;
+
+	i = 0;
+	while (c[i] != '\0')
+		i++;
+	return (i);
 }
