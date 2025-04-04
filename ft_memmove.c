@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/02 14:11:33 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/04 04:12:43 by ilaamari         ###   ########.fr       */
+/*   Created: 2025/04/04 03:07:42 by ilaamari          #+#    #+#             */
+/*   Updated: 2025/04/04 04:12:36 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *ptr, int value, unsigned long num)
+void	*ft_memmove(void *destination, const void *source, unsigned long size)
 {
-	unsigned char	*p;
-	
-	p = (unsigned char*)ptr;
-	while (num--)
+	int	i;
+
+	i = -1;
+	if (destination < source)
 	{
-		*p = value;
-		p++;
+		while (++i < size)
+			*(unsigned char *)(destination + i) = *(unsigned char *)(source
+					+ i);
 	}
-	return (ptr);
+	else
+	{
+		while (size--)
+			(*(unsigned char *)(destination + size
+						- 1)) = (*(unsigned char *)(source + size - 1));
+	}
+	return (destination);
 }
