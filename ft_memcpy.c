@@ -9,6 +9,7 @@
 /*   Updated: 2025/04/04 04:12:40 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, unsigned long num)
 {

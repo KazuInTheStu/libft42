@@ -9,6 +9,7 @@
 /*   Updated: 2025/04/04 04:12:43 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memset(void *ptr, int value, unsigned long num)
 {

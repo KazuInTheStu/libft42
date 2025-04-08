@@ -9,6 +9,7 @@
 /*   Updated: 2025/04/04 02:54:34 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	ft_bzero(void *s, unsigned long len)
 {
