@@ -6,27 +6,33 @@
 /*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 03:07:42 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/04 04:12:36 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:33:44 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *destination, const void *source, unsigned long size)
 {
-	int	i;
+	unsigned long	i;
 
-	i = -1;
+	i = 0;
 	if (destination < source)
 	{
-		while (++i < size)
-			*(unsigned char *)(destination + i) = *(unsigned char *)(source
-					+ i);
+		while (i < size)
+		{
+			((unsigned char *)destination)[i] = ((unsigned char *)source)[i];
+			i++;
+		}
 	}
 	else
 	{
-		while (size--)
-			(*(unsigned char *)(destination + size
-						- 1)) = (*(unsigned char *)(source + size - 1));
+		i = size;
+		while (i > 0)
+		{
+			i--;
+			((unsigned char *)destination)[i] = ((unsigned char *)source)[i];
+		}
 	}
 	return (destination);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 21:21:31 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/08 21:21:31 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:34:02 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s)
 {
-	char	*dup;
+	char			*dup;
 	unsigned long	len;
 	unsigned long	i;
 

@@ -6,16 +6,17 @@
 /*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 15:10:40 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/04 02:54:34 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:33:03 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_bzero(void *s, unsigned long len)
 {
 	unsigned char	*p;
 
-	*p = s;
+	p = s;
 	while (len--)
 	{
 		*p = 0;

@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 20:59:10 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/08 20:59:10 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:40:41 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
 
 int	ft_tolower(int c)
 {

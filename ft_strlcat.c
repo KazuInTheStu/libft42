@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 20:53:22 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/08 20:53:22 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:34:11 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 unsigned long	ft_strlcat(char *dst, const char *src, unsigned long size)

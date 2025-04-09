@@ -6,12 +6,13 @@
 /*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 14:01:08 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/04 02:58:27 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:34:18 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_strlen(const char *c)
+unsigned long	ft_strlen(const char *c)
 {
 	int	i;
 

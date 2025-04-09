@@ -3,29 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
+/*   By: ilaamari <ilaamari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 20:44:16 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/08 20:44:16 by ilaamari         ###   ########.fr       */
+/*   Updated: 2025/04/09 23:39:13 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long size)
 {
-	unsigned long	i;
+	unsigned char		*d;
+	const unsigned char	*s = (const unsigned char *)src;
 
 	if (!dst || !src)
 		return (0);
-	i = 0;
-	while (src[i] && i < size - 1)
+	d = (unsigned char *)dst;
+	while (*s && size > 1)
 	{
-		dst[i] = src[i];
-		i++;
+		*d = *s;
+		d++;
+		s++;
+		size--;
 	}
 	if (size > 0)
-		dst[i] = '\0';
-	while (src[i])
-		i++;
-	return (i);
+		*d = '\0';
+	while (*s)
+		s++;
+	return (s - (unsigned char *)src);
 }
