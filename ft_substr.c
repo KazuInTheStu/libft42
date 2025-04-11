@@ -1,28 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ilaamari <ilaamari@42nice.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 21:03:38 by ilaamari          #+#    #+#             */
-/*   Updated: 2025/04/08 21:03:38 by ilaamari         ###   ########.fr       */
+/*   Created: 2025/04/12 00:40:09 by ilaamari          #+#    #+#             */
+/*   Updated: 2025/04/12 00:40:09 by ilaamari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, unsigned long n)
+char	*ft_substr(char const *s, unsigned int start, unsigned long len)
 {
+	char			*sub;
+	unsigned long	s_len;
 	unsigned long	i;
 
-	i = 0;
-	while (i < n)
+	if (!s)
+		return (0);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
 	{
-		if ((unsigned char)s1[i] != (unsigned char)s2[i]
-			|| s1[i] == '\0' || s2[i] == '\0')
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
+		sub = malloc(1);
+		if (!sub)
+			return (0);
+		sub[0] = '\0';
+		return (sub);
 	}
-	return (0);
+	if (len > s_len - start)
+		len = s_len - start;
+	sub = malloc(len + 1);
+	if (!sub)
+		return (0);
+	i = 0;
+	while (i < len)
+		sub[i++] = s[start++];
+	sub[i] = '\0';
+	return (sub);
 }
+
