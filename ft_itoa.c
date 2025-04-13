@@ -31,7 +31,10 @@ char	*ft_itoa(int n)
 	unsigned long		num;
 
 	len = ft_len(n);
-	num = (n < 0) ? -(unsigned long)n : n;
+	if (n < 0)
+		num = -(unsigned long)n;
+	else
+		num = n;
 	str = malloc(len + 1);
 	if (!str)
 		return (0);
