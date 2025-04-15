@@ -18,6 +18,7 @@
 # include <limits.h>
 # include <stdint.h>
 # include <stddef.h>
+
 int				ft_isalpha(int c);
 int				ft_isdigit(int n);
 int				ft_isalnum(int c);
